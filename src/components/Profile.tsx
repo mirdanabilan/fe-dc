@@ -19,16 +19,19 @@ const Profile: React.FC = () => {
     const [page, setPage] = useState<number>(1);
 
     useEffect(() => {
-        getTourist().then((value) => {
+        getTourist(page).then((value) => {
             console.log(value);
             setTouristList(value as TouristAPI);
         })
     }, []);
 
     const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
-        const {listPage} = touristList?.data.page;
         setPage(value);
         console.log(value);
+        getTourist(page).then((value) => {
+            console.log(value);
+            setTouristList(value as TouristAPI);
+        })
       };
     
     return (
