@@ -1,0 +1,41 @@
+.tourist-component{
+    grid-auto-columns: max-content;
+    display: flex;
+    padding-bottom: 2px;
+}
+
+.prof-pic{
+    width: 130px;
+    height: 130px;
+    border-radius: 150px;
+    margin-left: 10px;
+}
+
+.tourist-det {
+    padding-top: 20px;
+    margin-left: 25px;
+}
+
+.tourist-name{
+    font-size: 24px;
+    font-style: normal;
+    line-height: 40px;
+}
+
+.tourist-email{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.tourist-location{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 3px;
+}
+
+.tourist-pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
